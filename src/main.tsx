@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {Products} from "./Products.tsx";
 import Dashboard from "./Dashboard.tsx";
 import DashboardClients from "./DasboardClients.tsx";
+import {TwoFactor} from "./TwoFactor.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
               <Route path="/products" element={<Products />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/dashboard/clients" element={<DashboardClients />} />
+              <Route path="/2fa"    element={<TwoFactor />} />
           </Routes>
       </BrowserRouter>
   </StrictMode>,

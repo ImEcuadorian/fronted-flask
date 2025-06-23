@@ -17,7 +17,7 @@ export const Login: React.FC = () => {
         try {
             const response = await loginUser({ email, password });
             setSuccessMsg(response.message || "Inicio de sesión exitoso");
-            navigate("/products");
+            navigate("/2fa");
         } catch (error: any) {
             setErrorMsg(error.message || "Error al iniciar sesión");
         }
